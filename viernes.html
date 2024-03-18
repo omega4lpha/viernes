@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta regresiva</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url(bg.jpg);
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            overflow: hidden; /* Evitar barras de desplazamiento */
+        }
+        
+        h1 {
+            margin-top: 50px;
+        }
+        
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .countdown {
+            font-size: 8vw;
+            margin: 0 4vw;
+        }
+
+        .unit {
+            font-size: 3vw;
+            margin-top: 1.5vw;
+        }
+
+        .unit-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .master {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="master">
+        <h1>Cuanto falta hasta el viernes mi pana!!!!!</h1>
+        <div class="contenedor">
+            <div class="unit-container">
+                <div id="dias" class="countdown"></div>
+                <div class="unit">Días</div>
+            </div>
+            <div class="unit-container">
+                <div id="horas" class="countdown"></div>
+                <div class="unit">Horas</div>
+            </div>
+            <div class="unit-container">
+                <div id="minutos" class="countdown"></div>
+                <div class="unit">Minutos</div>
+            </div>
+            <div class="unit-container">
+                <div id="segundos" class="countdown"></div>
+                <div class="unit">Segundos</div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        // Función para actualizar el DOM con el tiempo restante
+        function actualizarCuentaRegresiva() {
+            var ahora = new Date();
+            var diaSemana = ahora.getDay();
+            var diasRestantes = 5 - diaSemana; // 5 es el código del día viernes, 0 es domingo, 1 lunes, y así sucesivamente
+
+            if (diasRestantes <= 0) {
+                diasRestantes += 7; // Asegurarse de que si hoy es viernes, aún cuenta hasta el próximo viernes
+            }
+
+            var fechaObjetivo = new Date(ahora.getTime() + diasRestantes * 24 * 60 * 60 * 1000); // Calcular la fecha del próximo viernes
+            fechaObjetivo.setHours(17, 0, 0, 0); // Establecer la hora objetivo a las 17:00 horas
+
+            var diferencia = fechaObjetivo - ahora;
+
+            // Calcula los días, horas, minutos y segundos restantes
+            var dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            var horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+            var segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+            // Agregar ceros a la izquierda si es necesario
+            dias = dias < 10 ? "0" + dias : dias;
+            horas = horas < 10 ? "0" + horas : horas;
+            minutos = minutos < 10 ? "0" + minutos : minutos;
+            segundos = segundos < 10 ? "0" + segundos : segundos;
+
+            // Actualiza el DOM
+            document.getElementById('dias').innerHTML = dias;
+            document.getElementById('horas').innerHTML = horas;
+            document.getElementById('minutos').innerHTML = minutos;
+            document.getElementById('segundos').innerHTML = segundos;
+
+            // Actualiza cada segundo
+            if (diferencia > 0) {
+                setTimeout(actualizarCuentaRegresiva, 1000);
+            } else {
+                // Cuando la cuenta regresiva llega a cero, puedes ejecutar alguna acción
+                document.getElementById('contenedor').innerHTML = '¡Feliz día objetivo!';
+            }
+        }
+
+        // Iniciar la cuenta regresiva cuando la página se cargue
+        window.onload = function() {
+            actualizarCuentaRegresiva();
+        };
+    </script>
+</body>
+</html>
