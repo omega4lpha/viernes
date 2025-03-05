@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Diagrama Completo de Seguridad e Higiene Industrial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+        .box {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 5px solid #2c3e50;
+        }
+        .box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .title {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 8px;
+        }
+        .subtitle {
+            color: #3498db;
+            font-size: 1.1em;
+            margin: 15px 0 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        .content {
+            color: #2c3e50;
+        }
+        .special-term {
+            background: #f1c40f;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 5px 0;
+        }
+        .source {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-top: 15px;
+            display: block;
+        }
+        .arrow-right::after {
+            content: '→';
+            color: #e74c3c;
+            margin-left: 10px;
+        }
+        .grid-subcontainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .list-with-icons {
+            list-style: none;
+            padding-left: 20px;
+        }
+        .list-with-icons li::before {
+            content: '•';
+            color: #27ae60;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .legislation-box {
+            border-left-color: #8e44ad;
+        }
+        .example-box {
+            border-left-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <h1>Diagrama Integral de Seguridad e Higiene Industrial</h1>
+    <div class="container">
+        <!-- Prevención de Riesgos Laborales -->
+        <div class="box">
+            <div class="title">Prevención de Riesgos Laborales (PRL)</div>
+            <div class="content">
+                <p class="subtitle">Definición</p>
+                <p>Conjunto de actividades para evitar <span class="special-term">accidentes laborales</span> y <span class="special-term">enfermedades profesionales</span>.</p>
+                
+                <p class="subtitle">Conceptos Clave</p>
+                <ul class="list-with-icons">
+                    <li><span class="special-term">Riesgo</span>: Probabilidad + Gravedad (ej: manipulación de químicos)</li>
+                    <li><span class="special-term">Incidente</span>: Evento sin daño pero con potencial (ej: caída de herramienta)</li>
+                    <li><span class="special-term">Riesgo Inherente</span>: Inevitable pero controlable (ej: transporte)</li>
+                </ul>
+                
+                <p class="subtitle">Factores que Influyen</p>
+                <div class="grid-subcontainer">
+                    <div>
+                        <p><strong>Ambientales</strong> (Higiene Industrial)</p>
+                        <p>Agentes físicos, químicos y biológicos</p>
+                    </div>
+                    <div>
+                        <p><strong>Fisiológicos</strong> (Ergonomía)</p>
+                        <p>Carga física/mental y diseño de puestos</p>
+                    </div>
+                </div>
+                <div class="source">Fuente 1, 2 y 3</div>
+            </div>
+        </div>
+
+        <!-- Seguridad Industrial -->
+        <div class="box">
+            <div class="title">Seguridad Industrial</div>
+            <div class="content">
+                <p class="subtitle">Objetivo</p>
+                <p>Prevenir <span class="special-term">accidentes laborales</span> mediante:</p>
+                <ul class="list-with-icons">
+                    <li>Identificación de riesgos</li>
+                    <li>Evaluación de condiciones inseguras</li>
+                    <li>Jerarquía de controles (eliminación > sustitución > ingeniería > administración > EPP)</li>
+                </ul>
+                
+                <p class="subtitle">Ámbitos de Actuación</p>
+                <div class="grid-subcontainer">
+                    <div>
+                        <p><strong>Laboral</strong></p>
+                        <p>Protección de trabajadores (LPRL)</p>
+                    </div>
+                    <div>
+                        <p><strong>Producto</strong></p>
+                        <p>Seguridad para usuarios finales (Directiva 2001/95/CE)</p>
+                    </div>
+                    <div>
+                        <p><strong>Accidentes Graves</strong></p>
+                        <p>Protección población general (Seveso II)</p>
+                    </div>
+                </div>
+                <div class="source">Fuente 2 y 3</div>
+            </div>
+        </div>
+
+        <!-- Higiene Industrial -->
+        <div class="box">
+            <div class="title">Higiene Industrial</div>
+            <div class="content">
+                <p class="subtitle">Enfoque</p>
+                <p>Controlar agentes ambientales que causan enfermedades:</p>
+                <ul class="list-with-icons">
+                    <li>Físicos (ruido, vibraciones)</li>
+                    <li>Químicos (vapores, polvos)</li>
+                    <li>Biológicos (microorganismos)</li>
+                </ul>
+                
+                <p class="subtitle">Métodos de Control</p>
+                <div class="grid-subcontainer">
+                    <div>
+                        <p><strong>Evaluación de Exposición</strong></p>
+                        <p>Medición de niveles tóxicos</p>
+                    </div>
+                    <div>
+                        <p><strong>Protección Colectiva</strong></p>
+                        <p>Ventilación, encapsulamiento</p>
+                    </div>
+                </div>
+                <div class="source">Fuente 1 y 3</div>
+            </div>
+        </div>
+
+        <!-- Ergonomía -->
+        <div class="box">
+            <div class="title">Ergonomía</div>
+            <div class="content">
+                <p class="subtitle">Principios</p>
+                <p>Diseñar puestos de trabajo adaptados a:</p>
+                <ul class="list-with-icons">
+                    <li>Capacidades físicas/mentales</li>
+                    <li>Carga de trabajo</li>
+                    <li>Interacción hombre-máquina</li>
+                </ul>
+                
+                <p class="subtitle">Objetivos</p>
+                <ul class="list-with-icons">
+                    <li>Prevenir lesiones musculares</li>
+                    <li>Reducir fatiga laboral</li>
+                    <li>Optimizar eficiencia</li>
+                </ul>
+                <div class="source">Fuente 1 y 3</div>
+            </div>
+        </div>
+
+        <!-- Salud Ocupacional -->
+        <div class="box">
+            <div class="title">Salud Ocupacional</div>
+            <div class="content">
+                <p class="subtitle">Definición OMS</p>
+                <p>"Bienestar físico, mental y social completo en el trabajo"</p>
+                
+                <p class="subtitle">Componentes</p>
+                <div class="grid-subcontainer">
+                    <div>
+                        <p><strong>Medicina Laboral</strong></p>
+                        <p>Vigilancia epidemiológica</p>
+                    </div>
+                    <div>
+                        <p><strong>Toxicología</strong></p>
+                        <p>Efectos de sustancias químicas</p>
+                    </div>
+                </div>
+                
+                <p class="subtitle">Objetivos</p>
+                <ul class="list-with-icons">
+                    <li>Adaptar trabajo al hombre</li>
+                    <li>Prevención de enfermedades</li>
+                    <li>Promoción de bienestar</li>
+                </ul>
+                <div class="source">Fuente 1 y 3</div>
+            </div>
+        </div>
+
+        <!-- Legislación -->
+        <div class="box legislation-box">
+            <div class="title">Legislación Relevante</div>
+            <div class="content">
+                <p class="subtitle">España</p>
+                <ul class="list-with-icons">
+                    <li><span class="special-term">LPRL (Ley 31/1995)</span>: Obligaciones empresariales</li>
+                    <li><span class="special-term">RD 486/1997</span>: Condiciones en lugares de trabajo</li>
+                    <li><span class="special-term">RD 1254/1999</span>: Accidentes con sustancias peligrosas</li>
+                </ul>
+                
+                <p class="subtitle">UE</p>
+                <ul class="list-with-icons">
+                    <li>Directiva 89/391/CEE (base LPRL)</li>
+                    <li>Directiva Seveso II (prevención accidentes)</li>
+                </ul>
+                <div class="source">Fuente 2 y 3</div>
+            </div>
+        </div>
+
+        <!-- Condiciones de Trabajo -->
+        <div class="box example-box">
+            <div class="title">Condiciones de Trabajo (RD 486/1997)</div>
+            <div class="content">
+                <p class="subtitle">Requisitos Clave</p>
+                <ul class="list-with-icons">
+                    <li>Altura mínima: 3m (2.5m en oficinas)</li>
+                    <li>Suelos antiincendios en zonas de inflamables</li>
+                    <li>Escaleras: Ángulo ≤75°, antideslizantes</li>
+                    <li>Iluminación: 500 lux para tareas precisas</li>
+                </ul>
+                
+                <p class="subtitle">Servicios Higiénicos</p>
+                <ul class="list-with-icons">
+                    <li>1 retrete/15 trabajadores</li>
+                    <li>Vestuarios con taquillas separadas</li>
+                    <li>Botiquín con contenido mínimo</li>
+                </ul>
+                <div class="source">Fuente 3</div>
+            </div>
+        </div>
+
+        <!-- Índices Estadísticos -->
+        <div class="box example-box">
+            <div class="title">Índices de Accidentabilidad</div>
+            <div class="content">
+                <p class="subtitle">Cálculos Clave</p>
+                <ul class="list-with-icons">
+                    <li><span class="special-term">Frecuencia</span>: (Accidentes × 1,000,000) / Horas trabajadas</li>
+                    <li><span class="special-term">Gravedad</span>: (Días perdidos × 1,000,000) / Horas trabajadas</li>
+                    <li><span class="special-term">Incidencia</span>: Accidentes / Trabajadores expuestos</li>
+                </ul>
+                
+                <p class="subtitle">Clasificación</p>
+                <ul class="list-with-icons">
+                    <li>Incidente: Sin daños</li>
+                    <li>Accidente leve: Sin baja</li>
+                    <li>Accidente grave: Baja médica</li>
+                </ul>
+                <div class="source">Fuente 2</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
