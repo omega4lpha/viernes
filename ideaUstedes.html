@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Eventos Inmersivos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            flex-direction: column;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            width: 80%;
+            height: 80vh;
+            margin: auto;
+        }
+
+        .grid-item {
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            border: 1px solid #000;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .item-ancho {
+            grid-column: span 2;
+        }
+    
+        .item-mas-ancho {
+            grid-column: span 3;
+        }
+
+        .item-expandido {
+            grid-row: span 2;
+        }
+
+        ul {
+            list-style-type: none;
+            font-size: 14px;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        h1 {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agencia de Organización de Eventos Temáticos con Experiencias Inmersivas</h1>
+
+    <div class="grid-container">
+        <div class="grid-item item-expandido">
+            <h3>Alianzas Clave</h3>
+            <ul>
+                <li>Proveedores de tecnología inmersiva (VR, AR, mapping).</li>
+                <li>Espacios y venues para eventos.</li>
+                <li>Empresas de catering y logística.</li>
+                <li>Agencias de marketing y publicidad.</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h3>Actividades Clave</h3>
+            <ul>
+                <li>Diseño y planificación de eventos inmersivos.</li>
+                <li>Desarrollo de experiencias con tecnología VR y AR.</li>
+                <li>Coordinación con proveedores y clientes.</li>
+                <li>Marketing y promoción de servicios.</li>
+            </ul>
+        </div>
+        <div class="grid-item item-expandido">
+            <h3>Propuesta de Valor</h3>
+            <ul>
+                <li>Eventos personalizados con tecnología innovadora.</li>
+                <li>Experiencias inmersivas para clientes y asistentes.</li>
+                <li>Mayor engagement y diferenciación en el mercado.</li>
+                <li>Soluciones flexibles para eventos corporativos y privados.</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h3>Relación con Clientes</h3>
+            <ul>
+                <li>Atención personalizada y consultoría.</li>
+                <li>Experiencias demo y pruebas previas.</li>
+                <li>Soporte técnico y asesoría en implementación.</li>
+            </ul>
+        </div>
+        <div class="grid-item item-expandido">
+            <h3>Segmento de Clientes</h3>
+            <ul>
+                <li>Corporaciones que buscan eventos innovadores.</li>
+                <li>Particulares para bodas y celebraciones.</li>
+                <li>Organizadores de ferias y exposiciones.</li>
+                <li>Marcas que desean eventos experienciales.</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h3>Recursos Clave</h3>
+            <ul>
+                <li>Equipos de realidad virtual y aumentada.</li>
+                <li>Software de proyección inmersiva.</li>
+                <li>Equipo de producción y creatividad.</li>
+                <li>Red de contactos en la industria de eventos.</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h3>Canales</h3>
+            <ul>
+                <li>Sitio web y redes sociales.</li>
+                <li>Marketing digital y alianzas estratégicas.</li>
+                <li>Ferias y exposiciones de tecnología y eventos.</li>
+            </ul>
+        </div>
+        <div class="grid-item item-ancho">
+            <h3>Estructura de Costos</h3>
+            <ul>
+                <li>Desarrollo de tecnología y software.</li>
+                <li>Compra y mantenimiento de equipos.</li>
+                <li>Publicidad y adquisición de clientes.</li>
+                <li>Costos operativos y de logística.</li>
+            </ul>
+        </div>
+        <div class="grid-item item-mas-ancho">
+            <h3>Fuentes de Ingreso</h3>
+            <ul>
+                <li>Venta de paquetes de eventos personalizados.</li>
+                <li>Alquiler de equipos de tecnología inmersiva.</li>
+                <li>Planes de suscripción para empresas.</li>
+                <li>Consultoría en integración de tecnología.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
