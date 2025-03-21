@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 3x5 con celda expandida</title>
+    <style>
+	* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+	    font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+        }
+
+	body {
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            height: 100vh; /* Ocupa toda la altura de la pantalla */
+            background-color: #f0f0f0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            width: 80%;height: 80vh;
+            margin: auto;
+        }
+
+        .grid-item {
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            border: 1px solid #000;
+	    flex-direction: column;
+        }
+
+	.item-ancho {
+            grid-column: span 2;
+        }
+	
+	.item-mas-ancho {
+            grid-column: span 3;
+        }
+
+        /* Hacer que el primer elemento ocupe 2 filas y 1 columna */
+        .item-expandido {
+            grid-row: span 2;
+        }
+	ul{
+		list-style-type: none;
+	}
+	li{
+		font-size:12px;
+		padding:8px;
+	}
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item item-expandido">
+		<h3>Alianzas Clave</h3>
+		<ul>
+			<li>Empresas de hardware de VR como Meta (Oculus), HTC y fabricantes de cámaras 360.</li>
+			<li>Plataformas de hosting y almacenamiento en la nube.</li>
+			<li>Agencias de marketing y desarrollo de contenido audiovisual.</li>
+			<li>Empresas inmobiliarias interesadas en digitalizar sus propiedades.</li>
+		</ul>
+	</div>
+        <div class="grid-item">
+		<h3>Actividades </h3>
+		<ul>
+			<li>Desarrollo y mejora de la plataforma de almacenamiento y visualización de videos 360.</li>
+			<li>Creación de integraciones con Oculus, móviles y escritorio.</li>
+			<li>Estrategias de marketing y captación de clientes.</li>
+			<li>Generación de contenido educativo y demostraciones de uso.</li>
+			<li>Mantenimiento y optimización de la infraestructura tecnológica.</li>
+		</ul>
+	</div>
+        <div class="grid-item item-expandido">
+		<h3>Propuesta de Valor</h3>
+		<ul>
+			<li>Plataforma innovadora para almacenar, gestionar y visualizar videos 360 en aplicaciones móviles, escritorio y dispositivos como Oculus.</li>
+			<li>Experiencia inmersiva para clientes de inmobiliarias y agencias de marketing.</li>
+			<li>Mejora en la presentación de propiedades y productos mediante recorridos virtuales en 360 grados.</li>
+			<li>Reducción de costos y tiempos en visitas físicas.</li>
+		</ul>
+	</div>
+        <div class="grid-item">
+		<h3>Relación con Clientes</h3>
+		<ul>
+			<li>Soporte técnico y asesoría personalizada.</li>
+			<li>Plataforma intuitiva con guías y tutoriales.</li>
+			<li>Comunidad de usuarios con foros y recursos educativos.</li>
+			<li>Modelo de suscripción con acceso a mejoras y actualizaciones.</li>
+		</ul>
+
+	</div>
+        <div class="grid-item item-expandido">
+		<h3>Segmento de Clientes</h3>
+		<ul>
+			<li>Inmobiliarias que buscan ofrecer recorridos virtuales de propiedades.</li>
+			<li>Contacto directo con inmobiliarias y agencias de marketing.</li>
+			<li>Empresas de marketing y publicidad que desean crear experiencias inmersivas para sus clientes.</li>
+			<li>Empresas tecnológicas interesadas en integrar videos 360 en sus plataformas.</li> 
+		</ul>
+	</div>
+        <div class="grid-item">
+		<h3>Recursos </h3>
+		<ul>
+			<li>Infraestructura de almacenamiento en la nube para videos 360.</li>
+			<li>Tecnología de reproducción y compatibilidad con dispositivos VR.</li>
+			<li>Equipo de desarrollo y soporte técnico especializado en VR y aplicaciones multiplataforma.</li>
+			<li>Red de alianzas con fabricantes de hardware y empresas del sector inmobiliario y marketing.</li>
+		</ul>
+	</div>
+        <div class="grid-item">
+		<h3>Canales</h3>
+		<ul>
+			<li>Página web con demostraciones y opción de suscripción.</li>
+			<li>Contacto directo con inmobiliarias y agencias de marketing.</li>
+			<li>Marketplace de aplicaciones móviles y de realidad virtual (Oculus Store, App Store, Google Play).</li>
+			<li>Redes sociales y publicidad digital.</li>
+			<li>Alianzas con fabricantes de hardware para VR.</li>
+		</ul>
+	</div>
+        <div class="grid-item item-ancho">
+		<h3>Estructura de costos</h3>
+		<ul>
+			<li>Desarrollo y mantenimiento de software.</li>
+			<li>Infraestructura en la nube para almacenamiento y procesamiento de videos 360.</li>
+			<li>Marketing y adquisición de clientes.</li>
+			<li>Costos de soporte técnico y atención al cliente.</li>
+			<li>Costos de alianzas y colaboraciones estratégicas.</li>
+		</ul>
+	</div>
+        <div class="grid-item item-mas-ancho">
+		<h3>Fuentes de Ingreso</h3>
+		<ul>
+			<li>Modelo de suscripción mensual/anual para acceso a la plataforma.</li>
+			<li>Venta de licencias para empresas que deseen integrar el software en sus sistemas.</li>
+			<li>Servicios personalizados de desarrollo a medida.</li>
+			<li>Monetización a través de integraciones con terceros.</li>
+		</ul>
+	</div>
+    </div>
+
+</body>
+</html>
