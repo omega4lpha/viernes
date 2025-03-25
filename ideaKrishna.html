@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Energético de Superalimentos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            flex-direction:column;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            width: 80%;height: 80vh;
+            margin: auto;
+        }
+
+        .grid-item {
+            background-color: #f8e8d5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            border: 1px solid #000;
+            flex-direction: column;
+        }
+
+        .item-ancho {
+            grid-column: span 2;
+        }
+        
+        .item-mas-ancho {
+            grid-column: span 3;
+        }
+
+        .item-expandido {
+            grid-row: span 2;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            font-size:12px;
+            padding:8px;
+            text-align: center;
+        }
+        h1{
+            padding:8px;
+            color: #5c3a21;
+        }
+        h3 {
+            color: #5c3a21;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Café Energético a Base de Superalimentos</h1>
+
+    <div class="grid-container">
+        <div class="grid-item item-expandido">
+            <h3>Alianzas Clave</h3>
+            <ul>
+                <li>Productores y distribuidores de superalimentos y alternativos al cafe (maca, moringa, cúrcuma).</li>
+                <li>Proveedores de proteinas vegetales y animales (suero, colageno, proteina de soya, etc.).</li>
+                <li>Influencers de salud, nutrición y estilo de vida como embajadores.</li>
+                <li>Gimnasios y centros deportivos como puntos de venta estrategicos.</li>
+		<li>Laboratorios de alimentos funcionales para la formulacion del producto.</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h3>Actividades Clave</h3>
+            <ul>
+                <li>Desarrollo de mezclas óptimas de café y superalimentos.</li>
+                <li>Producción en diferentes formatos (polvo, cápsulas, bebida lista).</li>
+                <li>Control de calidad y certificaciones orgánicas.</li>
+                <li>Marketing digital y contenido educativo sobre beneficios.</li>
+                <li>Distribución y logística eficiente.</li>
+            </ul>
+        </div>
+        <div class="grid-item item-expandido">
+            <h3>Propuesta de Valor</h3>
+            <ul>
+                <li>Energía sostenible sin bajones ni efectos secundarios.</li>
+                <li>Ingredientes 100% naturales y beneficios adicionales.</li>
+                <li>Opciones adaptadas (sin cafeína, con proteína, vegana).</li>
+                <li>Formatos convenientes (polvo, cápsulas, bebida lista).</li>
+                <li>Alternativa saludable al café tradicional y bebidas energéticas.</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h3>Relación con Clientes</h3>
+            <ul>
+                <li>Suscripciones personalizadas según necesidades.</li>
+                <li>Comunidad online con recetas y consejos de uso.</li>
+                <li>Programa de fidelización con descuentos.</li>
+                <li>Atención al cliente especializada en nutrición.</li>
+            </ul>
+        </div>
+        <div class="grid-item item-expandido">
+            <h3>Segmento de Clientes</h3>
+            <ul>
+                <li>Estudiantes universitarios y profesionales jóvenes.</li>
+                <li>Emprendedores y ejecutivos con alto rendimiento.</li>
+                <li>Deportistas y personas activas.</li>
+                <li>Consumidores conscientes de salud y bienestar.</li>
+                <li>Personas que buscan reducir su consumo de café tradicional.</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h3>Recursos Clave</h3>
+            <ul>
+                <li>Fórmulas patentadas de mezclas.</li>
+                <li>Proveedores confiables de superalimentos.</li>
+                <li>Planta de producción con certificaciones.</li>
+                <li>Equipo de nutricionistas e investigadores.</li>
+                <li>Plataforma e-commerce y sistema de suscripciones.</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h3>Canales</h3>
+            <ul>
+                <li>E-commerce propio con envíos nacionales.</li>
+                <li>Marketplaces de productos saludables.</li>
+                <li>Cafeterías especializadas y gimnasios.</li>
+                <li>Redes sociales y marketing de influencers.</li>
+                <li>Eventos de salud y bienestar.</li>
+            </ul>
+        </div>
+        <div class="grid-item item-ancho">
+            <h3>Estructura de Costos</h3>
+            <ul>
+                <li>Materias primas (café y superalimentos premium).</li>
+                <li>Producción y envasado.</li>
+                <li>Certificaciones orgánicas y de calidad.</li>
+                <li>Marketing digital y colaboraciones.</li>
+                <li>Logística y distribución.</li>
+            </ul>
+        </div>
+        <div class="grid-item item-mas-ancho">
+            <h3>Fuentes de Ingreso</h3>
+            <ul>
+                <li>Venta directa a través de e-commerce.</li>
+                <li>Suscripciones mensuales con entregas programadas.</li>
+                <li>Venta a distribuidores (cafeterías, gimnasios).</li>
+                <li>Kits especiales (deportivos, estudio, trabajo).</li>
+                <li>Ediciones limitadas con nuevos superalimentos.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
